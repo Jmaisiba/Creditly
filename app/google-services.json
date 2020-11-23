@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "102287309064",
+    "firebase_url": "https://credit001-84805.firebaseio.com",
+    "project_id": "credit001-84805",
+    "storage_bucket": "credit001-84805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102287309064:android:71f01b7bb275d9588854bd",
+        "android_client_info": {
+          "package_name": "com.example.creditly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102287309064-2hq4g13b6cueue54c9jc6r0ge9hfojgc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7BefK7-uN7mrsaUrweWj4Z0zA0ZF4PSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102287309064-2hq4g13b6cueue54c9jc6r0ge9hfojgc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
