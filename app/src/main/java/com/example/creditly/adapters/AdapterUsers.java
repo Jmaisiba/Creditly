@@ -1,6 +1,7 @@
-package com.example.creditly;
+package com.example.creditly.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.creditly.ChatActivity;
+import com.example.creditly.models.ModelUser;
+import com.example.creditly.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -38,6 +42,7 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyHolder myHolder, int i) {
 
+        String hisUid = userList.get(i).getUid();
         String userImage = userList.get(i).getImage();
         String userName = userList.get(i).getName();
         String userEmail = userList.get(i).getEmail();
@@ -55,7 +60,9 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.MyHolder> {
         myHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, ""+userEmail, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, ChatActivity.class);
+                intent.putExtra("hisUid", hisUid);
+                context.startActivity(intent);
             }
         });
 

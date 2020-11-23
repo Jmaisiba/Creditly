@@ -1,4 +1,4 @@
-package com.example.creditly;
+package com.example.creditly.fragments;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -31,6 +31,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.creditly.MainActivity;
+import com.example.creditly.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;

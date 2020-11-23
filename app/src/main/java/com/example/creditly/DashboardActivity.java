@@ -3,15 +3,16 @@ package com.example.creditly;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
+import com.example.creditly.fragments.ChatListFragment;
+import com.example.creditly.fragments.HomeFragment;
+import com.example.creditly.fragments.ProfileFragment;
+import com.example.creditly.fragments.UsersFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -79,6 +80,16 @@ public class DashboardActivity extends AppCompatActivity {
                     FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
                     ft3.replace(R.id.content, fragment3, "");
                     ft3.commit();
+                    return true;
+
+
+                case R.id.nav_chat:
+                    //user fragment transaction
+                    actionBar.setTitle("Chats");
+                    ChatListFragment fragment4 = new ChatListFragment();
+                    FragmentTransaction ft4 = getSupportFragmentManager().beginTransaction();
+                    ft4.replace(R.id.content, fragment4, "");
+                    ft4.commit();
                     return true;
             }
             return false;

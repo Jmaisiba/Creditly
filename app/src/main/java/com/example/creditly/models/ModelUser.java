@@ -1,4 +1,4 @@
-package com.example.creditly;
+package com.example.creditly.models;
 
 public class ModelUser {
 
